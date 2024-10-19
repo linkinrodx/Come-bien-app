@@ -1,0 +1,16 @@
+<ng-container *ngIf="columns && dataSource">
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+        <ng-container *ngFor="let item of columns.labels; index as i">
+            <ng-container matColumnDef="{{item}}">
+                <th mat-header-cell *matHeaderCellDef> {{columns.labels[i]}} </th>
+                <td mat-cell *matCellDef="let element"> {{element[columns.values[i]]}} </td>
+            </ng-container>
+        </ng-container>
+        
+        <tr mat-header-row *matHeaderRowDef="columns.labels"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns.labels;"></tr>
+    </table>    
+
+</ng-container>
