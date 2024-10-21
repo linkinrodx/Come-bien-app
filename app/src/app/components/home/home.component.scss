@@ -1,0 +1,10 @@
+:host{
+    .img{        
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPjpDTQ-E-Eb4alc_UJXtZ9ewz7sKQiE9cocBqSgu14KxpfEFh");
+        background-color: #cccccc; /* Used if the image is unavailable */
+        min-height: 250px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+}

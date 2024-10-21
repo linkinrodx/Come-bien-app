@@ -1,30 +1,23 @@
 
 
 <div class="container text-center">
-    <br>
     <div class="row">
         <div class="col-12">
             <h1>Bienvenido a <br><span class="" style="font-weight: bold;">Come bien App</span></h1>
         </div>
     </div>
-    <br>
     <div class="row">
-        <div class="col-12">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTPjpDTQ-E-Eb4alc_UJXtZ9ewz7sKQiE9cocBqSgu14KxpfEFh" alt="comer bien" style="height: 250px;">
-        </div>
+        <div class="col-12 img"></div>
     </div>
-    <br>
-    <br>
-    <br>
-    <div class="row">
-        <div class="col-4">
-            <button class="btn btn-info" (click)="changeRoute(AppConstants.Routes.productList)">Productos</button>
+    <div class="row" style="margin: 20px 0;">
+        <div class="col-12 col-md-4 p-1">
+            <button class="btn btn-info w-100" (click)="changeRoute(AppConstants.Routes.productList)">Productos</button>
         </div>
-        <div class="col-4">
-            <button class="btn btn-success" (click)="changeRoute(AppConstants.Routes.stock)">Almacén</button>
+        <div class="col-12 col-md-4 p-1">
+            <button class="btn btn-success w-100" (click)="changeRoute(AppConstants.Routes.stock)">Almacén</button>
         </div>
-        <div class="col-4">
-            <button class="btn btn-warning" (click)="changeRoute(AppConstants.Routes.dishList)">Recetas</button>
+        <div class="col-12 col-md-4 p-1">
+            <button class="btn btn-warning w-100" (click)="changeRoute(AppConstants.Routes.dishList)">Recetas</button>
         </div>
     </div>
 </div>
