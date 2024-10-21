@@ -6,6 +6,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { StockComponent } from './components/stock/stock.component';
 import { AppConstants } from 'src/utils/app.constants';
+import { DishComponent } from './components/dish/dish.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: AppConstants.Routes.stock, component: StockComponent },
   { path: AppConstants.Routes.productList, component: ProductListComponent },
   { path: AppConstants.Routes.dishList, component: DishListComponent },
+  { path: AppConstants.Routes.dishList+"/:id", component: DishComponent },
   { path: "*", component: HomeComponent }
 ];
 

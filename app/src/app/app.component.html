@@ -1,1 +1,35 @@
-<router-outlet></router-outlet>
+<mat-toolbar>
+    <div>
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+
+    <a mat-button class="companyName" routerLink="/">
+        <span>Inicio</span>
+    </a>
+
+    <span class="example-spacer"></span>
+
+    <div class="d-none d-md-block">
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+            <mat-icon>share</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container">
+    <mat-sidenav color="primary" #sidenav style="flex-direction: column; display: flex;" mode="over" opened="false">
+        <div style="flex-direction: column; display: flex;">
+            <a mat-button routerLink="/almacen">Almacén</a>
+            <a mat-button routerLink="/productos">Productos</a>
+            <a mat-button routerLink="/recetas">Recetas</a>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav-content> 
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

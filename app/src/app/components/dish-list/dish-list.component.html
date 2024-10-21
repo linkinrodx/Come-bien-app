@@ -1,1 +1,13 @@
-<p>dish-list works!</p>
+<div class="container">
+    <div class="row">
+        <h2>Recetas</h2>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-6" *ngFor="let item of datasource">
+            <div class="card" (click)="goToDetails(item.dishId)">
+                <span>{{item.dish}}</span>
+                <p>{{item.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

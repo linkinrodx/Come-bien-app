@@ -8,6 +8,11 @@ import { TableSimpleComponent } from '../components/table-simple/table-simple.co
 import { MaterialModule } from './material.module';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+
 @NgModule({
   declarations: [    
     TableSimpleComponent
@@ -17,7 +22,9 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    MatToolbarModule, MatButtonModule, MatIconModule,
+    MatSidenavModule
   ],
   exports: [
     TableSimpleComponent,
@@ -26,7 +33,9 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    MatToolbarModule, MatButtonModule, MatIconModule,
+    MatSidenavModule
   ]
 })
 export class SharedModule { }

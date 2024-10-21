@@ -1,0 +1,41 @@
+:host{
+    .companyName {
+        font-size: 20px;
+    }
+
+    .mat-toolbar {
+        height: 7vh;
+        background-color: rgb(187, 187, 187);
+    }
+    
+    a {
+        text-decoration: none;
+        font-size: 15px;
+        white-space: normal;
+    }
+
+    .mat-sidenav{
+        a{
+            padding: 10px 20px;
+            min-width: 150px;
+        }
+    }
+}
+
+
+button {
+    font-size: 110%;
+    min-width: min-content;
+}
+
+.example-icon {
+    padding: 0 14px;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-sidenav-content {
+    padding: 20px 0;
+}

@@ -6,4 +6,9 @@ export class AppConstants{
         static readonly dishList = "recetas";
     }
 
+    routes = [
+        {id: "stock", title: "Almacén"},
+        {id: "productList", title: "Productos"},
+        {id: "dishList", title: "Recetas"}
+    ]
 }
