@@ -8,8 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "install": "npm install",
-    "deploy": "ng build --prod --base-href=/app/"
+    "deploy": "ng build --prod --base-href=/Come-bien-app/"
   },
   "private": true,
   "dependencies": {
