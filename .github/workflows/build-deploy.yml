@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
         with:
-          repository: Come-bien-app
+          repository: linkinrodx/Come-bien-app
           ref: master
           submodules: app
       - uses: actions/setup-node@v1
