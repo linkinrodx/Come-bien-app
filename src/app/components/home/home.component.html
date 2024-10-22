@@ -1,0 +1,23 @@
+
+
+<div class="container text-center">
+    <div class="row">
+        <div class="col-12">
+            <h1>Bienvenido a <br><span class="" style="font-weight: bold;">Come bien App</span></h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 img"></div>
+    </div>
+    <div class="row" style="margin: 20px 0;">
+        <div class="col-12 col-md-4 p-1">
+            <button class="btn btn-info w-100" (click)="changeRoute(AppConstants.Routes.productList)">Productos</button>
+        </div>
+        <div class="col-12 col-md-4 p-1">
+            <button class="btn btn-success w-100" (click)="changeRoute(AppConstants.Routes.stock)">Almacén</button>
+        </div>
+        <div class="col-12 col-md-4 p-1">
+            <button class="btn btn-warning w-100" (click)="changeRoute(AppConstants.Routes.dishList)">Recetas</button>
+        </div>
+    </div>
+</div>

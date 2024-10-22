@@ -1,0 +1,30 @@
+:host{
+    .card{
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px 0;
+
+        background-image: url("https://picsum.photos/600/600");
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 180px; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+
+        display: flex;
+        color: #cccccc;
+        cursor: pointer;
+
+        span{
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        p{
+            font-weight: bold;
+            font-size: 12px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
